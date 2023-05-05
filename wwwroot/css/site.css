@@ -1,0 +1,139 @@
+:root {
+    --bg-primary-color: #245b7c;
+    --bg-secondary-color: #3bc99d;
+    --bg-light-color: #8ed1fc;
+    --bg-medium-blue: #3b9ac9;
+    --bg-white-color: #ffffff;
+    --bg-highlgiht-color: #cc5500;
+    --bg-heading-font: 'Lato', sans-serif;
+    --bg-content-font: 'Oswald', sans-serif;
+   
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Oswald:wght@300;400&display=swap');
+
+html, body {
+    height: 100%;
+    font-size: 16px;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--bg-content-font);
+
+}
+
+
+.btn {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: .75rem;
+    margin-top: .50rem;
+    background-color: var(--bg-secondary-color);
+    color: var(--bg-white-color);
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+    .btn:hover {
+        background-color: var(--bg-highlgiht-color);
+        color: var(--bg-white-color);
+    }
+
+a{
+    color: var(--bg-white-color);
+}
+/* Navigation */
+
+a.nav-link {
+    color: var(--bg-white-color);
+}
+
+    a.nav-link:hover {
+        color: var(--bg-secondary-color);
+    }
+
+.active {
+    color: var(--bg-white-color) !important;
+    text-decoration: underline;
+}
+
+
+.navbar {
+    background-color: var(--bg-primary-color);
+    color: var(--bg-white-color);
+    font-family: var(--bg-heading-font);
+    display: flex;
+    font-size: 2rem;
+   
+  
+}
+
+
+
+
+.phone-number {
+    font-size: 1.5rem;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    margin-left: 2rem;
+  
+}
+/* Nav End */
+main {
+    background-color: var(--bg-white-color);
+    height: 100%;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--bg-primary-color);
+    color: var(--bg-white-color);
+    flex-shrink: 0;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.footer-wrap {
+    width: 60%; 
+
+}
+
+.footer {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 70px;
+}
+
+.social-icon {
+    color: var(--bg-white-color);
+    font-size: 2rem;
+}
+
+.line {
+    border-bottom: solid 1.5px;
+    border-color: var(--bg-medium-blue);
+}
+
+.copyright {
+    font-size: 1rem;
+}
+
+/* Footer End */
+

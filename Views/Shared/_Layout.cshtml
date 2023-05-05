@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - BillTest</title>
+    <!-- BootStrap Icons-->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+
+    @*	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />*@
+    <!-- Bootstrap CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+          crossorigin="anonymous" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/BillTest.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-right navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow p-4">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="https://floridacfogroup.com/wp-content/uploads/2020/10/FLCF-HLogo_KO_2@2x-300x41.png" /> </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1  justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Recommendations</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="phone-number mt-3 ms-1"> | (877) 352-2367</div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn" href="#"> <div>Contact Me</div></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer">
+        <div class="footer-wrap">
+            <div class="row line">
+                <div class="col-12 col-md-4 text-center text-md-start">
+                    <img class="footer-logo img-fluid mb-2"
+                         alt="Florida CFO Group Stacked Logo"
+                         src="https://floridacfogroup.com/wp-content/uploads/2020/09/FLCF-Logo-Stacked@2x.png" />
+                </div>
+                <div class="col-12 col-md-4 text-center">Grow. Optimize. Protect.</div>
+                <div class="col-12 col-md-4 text-center text-md-end">
+                    <i class="bi bi-telephone-fill"></i>
+                    (877) 352-2367
+                    <a href="https://www.linkedin.com/in/bigilmour/">
+                        <i class="bi bi-linkedin social-icon p-2"></i>
+                    </a>
+                    <a href="https://www.facebook.com/CFOFlorida/">
+                        <i class="bi bi-facebook social-icon "></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="copyright mt-1">©2023 Sunset Coast Capital.  All rights reserved |</div>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    @*	<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>*@
+
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
