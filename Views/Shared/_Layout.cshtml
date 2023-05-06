@@ -19,9 +19,9 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-right navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow p-4">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="https://floridacfogroup.com/wp-content/uploads/2020/10/FLCF-HLogo_KO_2@2x-300x41.png" /> </a>
+        <nav class="navbar navbar-right navbar-expand-sm navbar-toggleable-sm   p-4">
+            <div class="container-fluid navbar-container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img class="img-fluid img-logo-header" src="https://floridacfogroup.com/wp-content/uploads/2020/10/FLCF-HLogo_KO_2@2x-300x41.png" /> </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -52,29 +52,30 @@
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
+    <div class="container-xxl g-xxl-0 g-0">
+        <main role="main" >
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer">
+    <footer class="border-top  ">
         <div class="footer-wrap">
             <div class="row line">
-                <div class="col-12 col-md-4 text-center text-md-start">
+                <div class="col-12 col-lg-4 text-center text-lg-start">
                     <img class="footer-logo img-fluid mb-2"
                          alt="Florida CFO Group Stacked Logo"
                          src="https://floridacfogroup.com/wp-content/uploads/2020/09/FLCF-Logo-Stacked@2x.png" />
                 </div>
-                <div class="col-12 col-md-4 text-center">Grow. Optimize. Protect.</div>
-                <div class="col-12 col-md-4 text-center text-md-end">
+                <div class="col-12 col-lg-4 text-center">Grow. Optimize. Protect.</div>
+                <div class="col-12 col-lg-4 text-center text-lg-end">
                     <i class="bi bi-telephone-fill"></i>
                     (877) 352-2367
-                    <a href="https://www.linkedin.com/in/bigilmour/">
-                        <i class="bi bi-linkedin social-icon p-2"></i>
+              
+                    <a href="#">
+                        <i class="bi bi-linkedin social-icon"></i>
                     </a>
                     <a href="https://www.facebook.com/CFOFlorida/">
-                        <i class="bi bi-facebook social-icon "></i>
+                        <i class="bi bi-facebook social-icon"></i>
                     </a>
                 </div>
 
