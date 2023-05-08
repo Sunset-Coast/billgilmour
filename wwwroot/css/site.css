@@ -112,10 +112,15 @@ a.nav-link {
 }
 
 .img-logo-header{
-    position: absolute;
-    top: 40px;
-    left: 20px;
-    min-width: 150px;
+    position: relative;
+  max-width: 250px;
+  padding-bottom: 3rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+
+  
 }
 /* Nav End */
 main {
@@ -159,13 +164,49 @@ main {
 
 }
 
+/* About Section */
 .about-wrap{
     display: flex;
     flex-direction: column;
     text-align: center;
     height: 500px;
-    border: 5px solid red;
+
+    background-color: var(--bg-medium-blue);
+    
 }
+
+.about-me{
+    padding: 1rem;
+    
+}
+.about-me-content{
+    color: var(--bg-white-color);
+    text-align: justify;
+    font-size: 1.3rem;
+    padding: 1.4rem;
+   
+    background-color: var(--bg-primary-color);
+    border-radius: 10px;
+}
+
+.about-me-img-bg {
+    background-color: var(--bg-light-color);
+    height: 100%;
+    justify-items: center;
+    border-radius: 52% 48% 53% 47% / 37% 35% 65% 63%;
+}
+
+.about-photo{
+    position: relative;
+    display: inline-block;
+    z-index: 3;
+    
+}
+.about-photo>img{
+  border-bottom: 2px solid white;
+}
+
+/* Skillset Section */
 
 .skillset-wrap {
     display: flex;
@@ -175,12 +216,18 @@ main {
     border: 5px solid red;
 }
 
+/* Recommendation Section */
+
 .recommendation-wrap {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    height: 500px;
+    display: grid;
+ 
+  
+   
     border: 5px solid red;
+}
+
+.recommendation-carousel{
+ 
 }
 
 
