@@ -161,7 +161,19 @@ main {
     background-color: rgba(0,0,0, 0.5);
     border-radius: 0.5rem;
     padding: 2em;
+    text-align: center;
 
+}
+
+.cta-button{
+    width: 200px;
+    height: 80px;
+    align-content: center;
+    justify-items: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 12rem;
+    flex-wrap: wrap;
 }
 
 /* About Section */
@@ -182,9 +194,9 @@ main {
 .about-me-content{
     color: var(--bg-white-color);
     text-align: justify;
-    font-size: 1.3rem;
-    padding: 1.4rem;
-   
+    font-size: 1.2rem;
+    padding: 1rem;
+   height: auto;
     background-color: var(--bg-primary-color);
     border-radius: 10px;
 }
