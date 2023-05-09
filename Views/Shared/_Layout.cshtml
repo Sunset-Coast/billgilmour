@@ -19,7 +19,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-right navbar-expand-sm navbar-toggleable-sm   p-4">
+        <nav class="navbar navbar-right navbar-expand-sm navbar-toggleable-sm">
             <div class="container-fluid navbar-container">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img class="img-fluid img-logo-header" src="https://floridacfogroup.com/wp-content/uploads/2020/10/FLCF-HLogo_KO_2@2x-300x41.png" /> </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -41,20 +41,18 @@
                         <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Recommendations</a>
                         </li>
-                        <li class="nav-item">
-                            <div class="phone-number mt-3 ms-1"> | (877) 352-2367</div>
-                        </li>
+                    
                      
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <div >
-        <main role="main" >
+    
+        <main role="main"  >
             @RenderBody()
         </main>
-    </div>
+    
 
     <footer class="border-top  ">
         <div class="footer-wrap">
