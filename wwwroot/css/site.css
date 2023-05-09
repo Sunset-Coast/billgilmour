@@ -127,7 +127,7 @@ a.nav-link:hover{
 
 .about-wrap {
     padding-bottom: 1rem;
-  padding-top: 1rem;
+    padding-top: 1rem;
     padding-left: 3rem;
     padding-right: 3rem;
     background-color: var(--bg-medium-blue);
@@ -138,12 +138,12 @@ a.nav-link:hover{
         background-color: var(--bg-light-color);
        
         border-radius: 52% 48% 53% 47% / 37% 35% 65% 63%;
-        padding-top: 3rem;
-        margin-top: 2rem;
+        padding-top: 2rem;
+        
     }
 
 .about-me-content-wrap {
-    margin-top: 3rem;
+    margin-top: 5rem;
     background-color: var(--bg-primary-color);
     height: 100%;
     border-radius: 10px;  
@@ -158,22 +158,31 @@ a.nav-link:hover{
 
 
 .skillset-wrap {
-    padding: 2rem;
-    height: auto;
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+   padding-right: 3rem;
+   padding-left: 3rem;
     text-align: center;
     background-color: var(--bg-primary-color);
     color: var(--bg-white-color);
 }
 
 .skillset-container {
-    margin: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 .icon-wrapper {
+ padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
     background-color: var(--bg-secondary-color);
     font-size: 10rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin: auto;
+    max-width: 400px;
+    max-height: 500px;
+
     border-radius: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
@@ -181,9 +190,86 @@ a.nav-link:hover{
 .skill-content {
   
     margin-top: 2.5rem;
-    font-size: 1rem;
+    font-size: 1.4rem;
     margin-bottom: 2.5rem;
 
+}
+
+.skill-content h2 {
+    padding-bottom: 1rem;
+   
+}
+
+.skill-content p {
+    text-align: justify;
+    padding: 2rem;
+}
+
+
+.recommendation-wrap {
+    padding: 3rem;
+    background-color: var(--bg-light-color);
+}
+
+.recommendation-carousel {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    overflow: hidden;
+}
+
+.carousel .carousel-item{
+    height: 800px;
+    width: 100%;
+   
+}
+
+.carousel-item img {
+    position: absolute;
+    object-fit: cover;
+    overflow-x: hidden;
+   /*
+    top:0;
+    left:0;*/
+    min-height: 500px;
+}
+
+.footer-wrap {
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.footer-logo {
+    max-height: 100px;
+
+  
+}
+
+.social-icon {
+    font-size: 2rem;
+   
+   margin-left: .5rem;
+    color: var(--bg-white-color);
+}
+
+a{
+    text-decoration: none;
+}
+
+.line {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--bg-medium-blue);
+    margin-bottom: .5rem;
+    
+}
+
+.social-icon:hover {
+    color: var(--bg-secondary-color);
+}
+
+.copyright {
+    font-size: .67rem;
 }
     /*
     
