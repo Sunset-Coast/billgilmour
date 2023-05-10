@@ -18,6 +18,19 @@ namespace BillTest.Controllers
             return View();
         }
 
+        public IActionResult About()
+        {
+            return View();
+        }
+
+        public IActionResult Skillset()
+        {
+            return View();
+        }
+        public IActionResult Recommendations()
+        {
+            return View();
+        }
         public IActionResult Privacy()
         {
             return View();
