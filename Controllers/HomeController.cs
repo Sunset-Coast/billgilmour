@@ -23,7 +23,7 @@ namespace BillTest.Controllers
             return View();
         }
 
-        public IActionResult Skillset()
+        public IActionResult Services()
         {
             return View();
         }
