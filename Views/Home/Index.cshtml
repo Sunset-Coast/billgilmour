@@ -1,25 +1,70 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
+@section Header{
     <section role="banner" class="hero-banner">
         <div class="hero">
-   @* <img src="~/img/Skyway-Bridge-2.jpg" alt="" aria-hidden="true" />*@
-        <div class="hero-section">
-        <h1>Discover how I can help you take control of your finances.</h1>
-        <div class="cta-button">
-            
-                <a class="btn btn-lg" asp-area="" asp-controller="Home" asp-action="Contact">Contact Me</a>
-        </div>
 
+            <div class="hero-section mt-5">
+                <h1>Discover how I can help you take control of your finances.</h1>
+                <div class="cta-button">
+
+                    <a class="btn btn-lg" asp-area="" asp-controller="Home" asp-action="Contact">Contact Me</a>
+                </div>
+
+            </div>
         </div>
-    </div>
-    </section>
+        </section>
+}
+
+
     <section role="textbox" class="mission-statement-wrap">
         <h2 >Our Mission</h2>
-        <div class="mission-statement mt-5">
+        <div class="mission-statement">
         <p>"To drive growth, integrity, and value through financial expertise, collaboration, and innovation."</p>
         </div>
+    </section>
+
+
+<section class="index-content">
+    <h3>Who We Serve</h3>
+    
+        <div class="row">
+        <div class="col-12 col-md-6">
+                <div class="index-serve-content">
+          <img src="~/img/Handshake.jpg" alt="" role="img" class="img-fluid"/>
+                </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <div class="index-serve-content">
+                <h4>People Served</h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi pariatur labore
+                iure voluptatum explicabo laudantium aspernatur sit saepe. Iusto, dignissimos?
+                Assumenda numquam odio non ullam! Soluta hic accusantium reprehenderit possimus.
+                    </p>
+                </div>
+        </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 order-last">
+                <div class="index-serve-content">
+                    <img src="~/img/Handshake.jpg" alt="" role="img" class="img-fluid" />
+                </div>
+            </div>
+            <div class="col-12 col-md-6 order-first">
+                <div class="index-serve-content">
+                    <h4>People Served</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi pariatur labore
+                        iure voluptatum explicabo laudantium aspernatur sit saepe. Iusto, dignissimos?
+                        Assumenda numquam odio non ullam! Soluta hic accusantium reprehenderit possimus.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+       
     </section>
 
 

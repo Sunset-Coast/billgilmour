@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="~/BillTest.styles.css" asp-append-version="true" />
 </head>
 <body>
-    <header>
+    <header class="header-bg">
         <nav class="navbar navbar-right navbar-expand-sm navbar-toggleable-sm ">
             <div class="container-fluid navbar-container">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img class="img-fluid img-logo-header" src="~/img/CFO-Transparent-Cropped.png" /> </a>
@@ -42,14 +42,12 @@
                         <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Services">Services</a>
                         </li>
-@*                        <li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Industries">Industries</a>
-                        </li>*@
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Recommendations">Recommendations</a>
                         </li>
+                  
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Contact">Contact Me</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Contact">Contact</a>
                         </li>
                     
                      
@@ -57,6 +55,7 @@
                 </div>
             </div>
         </nav>
+        @RenderSection("Header", required: false)
     </header>
     
         <main role="main"  >
@@ -87,7 +86,7 @@
 
             </div>
 
-            <div class="copyright mt-1">©2023 Sunset Coast Capital.  All rights reserved |</div>
+            <div class="copyright mt-4">©2023 Sunset Coast Capital.  All rights reserved |</div>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

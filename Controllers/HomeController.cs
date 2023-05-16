@@ -27,7 +27,7 @@ namespace BillTest.Controllers
         {
             return View();
         }
-        public IActionResult Recommendations()
+        public IActionResult Industries()
         {
             return View();
         }

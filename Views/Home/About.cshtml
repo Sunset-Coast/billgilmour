@@ -2,20 +2,34 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+    ViewData["Title"] = "Who We Are";
+}
+@section Header{
+    <section role="banner" class="hero-banner">
+        <div class="hero">
+
+            <div class="hero-section mt-5">
+                <h1>Who We Are</h1>
+              
+
+            </div>
+        </div>
+    </section>
 }
 <section role="article" id="about" class="about-wrap">
-    <h1>Meet the Team</h1><hr/>
+  
     <article class="about-me">
-        <div class="row mb-5 mt-2">
+        <h2>CFOs</h2><hr/>
+        <div class="row ">
             <div class="col col-lg-5 about-me-img-bg d-flex justify-content-center">
 
                 <img role="img" loading="lazy" src="/img/bill-gilmour-photo.png" class="about-photo img-fluid" alt="Professional headshot of Bill Gillmour" />
 
             </div>
             <div class="col-12 col-lg-7 about-me-content-wrap">
-                <h2 class="text-center text-light m-3">I'm Bill Gilmour</h2>
+               
                 <div class="about-me-content">
-
+                        <h2>I'm Bill Gilmour</h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi pariatur labore
                         iure voluptatum explicabo laudantium aspernatur sit saepe. Iusto, dignissimos?
@@ -38,14 +52,15 @@
         </div>
     </article>
     <article class="about-me ">
+        <h2 class="mt-4">Controllers</h2><hr/>
         <div class="row mb-5 mt-5">
-            <div class="col col-lg-5 about-me-img-bg d-flex justify-content-center order-last">
+            <div class="col col-lg-5 about-me-img-bg d-flex justify-content-center ">
 
                 <img role="img" loading="lazy" src="/img/bill-gilmour-photo.png" class="about-photo img-fluid" alt="Professional headshot of Bill Gillmour" />
 
             </div>
             <div class="col-12 col-lg-7 about-me-content-wrap">
-                <h2 class="text-center text-light m-3">I'm an Employee</h2>
+                <h2 class="text-center  m-3">I'm an Employee</h2>
                 <div class="about-me-content">
 
                     <p>
@@ -69,7 +84,7 @@
 
         </div>
     </article>
-    <article class="about-me mb-5 mt-5">
+    <article class="about-me mb-5">
         <div class="row ">
             <div class="col col-lg-5 about-me-img-bg d-flex justify-content-center">
 
@@ -77,7 +92,7 @@
 
             </div>
             <div class="col-12 col-lg-7 about-me-content-wrap">
-                <h2 class="text-center text-light m-3">I'm an Employee</h2>
+                <h2 class="text-center m-3">I'm an Employee</h2>
                 <div class="about-me-content">
 
                     <p>
@@ -101,5 +116,39 @@
 
         </div>
     </article>
+
+        <article class="about-me ">
+            <h2 class="mt-4">The Team</h2><hr />
+            <div class="row mb-5 mt-5">
+                <div class="col col-lg-5 about-me-img-bg d-flex justify-content-center ">
+
+                    <img role="img" loading="lazy" src="/img/bill-gilmour-photo.png" class="about-photo img-fluid" alt="Professional headshot of Bill Gillmour" />
+
+                </div>
+                <div class="col-12 col-lg-7 about-me-content-wrap">
+                    <h2 class="text-center  m-3">I'm an Employee</h2>
+                    <div class="about-me-content">
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi pariatur labore
+                            iure voluptatum explicabo laudantium aspernatur sit saepe. Iusto, dignissimos?
+                            Assumenda numquam odio non ullam! Soluta hic accusantium reprehenderit possimus.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi pariatur labore
+                            iure voluptatum explicabo laudantium aspernatur sit saepe. Iusto, dignissimos?
+                            Assumenda numquam odio non ullam! Soluta hic accusantium reprehenderit possimus.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi pariatur labore
+                            iure voluptatum explicabo laudantium aspernatur sit saepe. Iusto, dignissimos?
+                            Assumenda numquam odio non ullam! Soluta hic accusantium reprehenderit possimus.
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+        </article>
 
 </section>
