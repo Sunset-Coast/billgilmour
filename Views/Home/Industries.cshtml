@@ -9,7 +9,7 @@
         <div class="hero">
 
             <div class="hero-section mt-5">
-                <h1>What Our Customers Are Saying</h1>
+                <h1 class="text-center">Industries</h1>
 
 
             </div>
@@ -23,11 +23,11 @@
         <div class="services-wrap">
 
             <div class="services-rows">
-                <div class="row justify-content-center mb-5 pb-5">
-                    <div class="col-4">
+                <div class="row justify-content-center ">
+                    <div class="col-12 col-lg-4">
                         <img src="~/img/Money-Hand.jpg" class="img-fluid services-img" role="img" alt="Hand holding money" />
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-lg-6">
                         <h2>Software as a Service (SaaS)</h2>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi pariatur labore
@@ -41,11 +41,11 @@
                     </div>
                 </div>
 
-                <div class="row justify-content-center mb-5 pb-5">
-                    <div class="col-4 order-last">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-4 order-first order-lg-last">
                         <img src="~/img/Whiteboard-Hand.jpg" class="img-fluid services-img" role="img" alt="Hand writing on a clear whiteboard." />
                     </div>
-                    <div class="col-6 ">
+                    <div class="col-12 col-lg-6 ">
                         <div>
                             <h2>Technology</h2>
                             <p>
@@ -61,11 +61,11 @@
                     </div>
                 </div>
 
-                <div class="row justify-content-center mb-5 pb-5">
-                    <div class="col-4">
+                <div class="row justify-content-center ">
+                    <div class="col-12 col-lg-4">
                         <img src="~/img/Handshake.jpg" class="img-fluid services-img" role="img" alt="Hand reaching out for a handshake." />
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-lg-6">
                         <h2>Manufacturing</h2>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi pariatur labore
@@ -82,9 +82,9 @@
         </div>
     </section>
 
-<section role="article" id="recommendations" class="recommendation-wrap">
+@*<section role="article" id="recommendations" class="recommendation-wrap">
     <article class="recommendation-carousel">
-        <h2 class="text-center mb-4">Satisfied Clients</h2>
+        <h2 class="text-center ">Satisfied Clients</h2>
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -107,4 +107,28 @@
             </button>
         </div>
     </article>
-</section>
+</section>*@
+<section class="recommendation-wrap">
+    <h3 class="text-center">Customer Reviews</h3>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/img/recommedation.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                    <img src="/img/recommedation.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                    <img src="/img/recommedation.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev leftarrow" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"><i class="bi bi-arrow-right-circle-fill arrow"></i></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+    </section>

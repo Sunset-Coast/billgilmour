@@ -25,7 +25,41 @@
 </head>
 <body>
     <header class="header-bg">
-        <nav class="navbar navbar-right navbar-expand-sm navbar-toggleable-sm ">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img class="img-fluid img-logo-header" src="~/img/CFO-Transparent-Cropped.png" /> </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img class="img-fluid img-logo-header" src="~/img/CFO-Transparent-Cropped.png" /> </a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="About">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Services">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Industries">Industries</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Contact">Contact</a>
+                            </li>
+
+                        </ul>
+                   
+                    </div>
+                </div>
+            </div>
+        </nav>
+    @*    <nav class="navbar navbar-right navbar-expand-sm navbar-toggleable-sm ">
             <div class="container-fluid navbar-container">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img class="img-fluid img-logo-header" src="~/img/CFO-Transparent-Cropped.png" /> </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -54,7 +88,7 @@
                     </ul>
                 </div>
             </div>
-        </nav>
+        </nav>*@
         @RenderSection("Header", required: false)
     </header>
     
@@ -64,18 +98,18 @@
     
 
     <footer >
-        <div class="footer-wrap">
+        <div >
             <div class="row line">
-                <div class="col-12 col-lg-4 text-center text-lg-start">
-                    <img class="footer-logo img-fluid "
+                <div class="col-12 col-lg-4 text-center  text-lg-start order-last order-lg-first">
+                    <img class="footer-logo img-fluid mb-4"
                          alt="CFO Logo"
                          src="~/img/CFO-Transparent-Cropped.png" />
                 </div>
-                <div class="col-12 col-lg-4 text-center">Grow. Optimize. Protect.</div>
-                <div class="col-12 col-lg-4 text-center text-lg-end ">
-                    <i class="bi bi-telephone-fill "> (877) 352-2367 </i>
-                  
-              
+                <div class="col-12 col-lg-4 text-center mb-3 ">Grow. Optimize. Protect.</div>
+                <div class="col-12 col-lg-4 text-center mb-3 text-lg-end order-first order-lg-last">
+                    <i class="bi bi-telephone-fill "> </i>(877) 352-2367<br/>
+
+
                     <a href="https://www.linkedin.com/in/bigilmour/">
                         <i class="bi bi-linkedin social-icon"></i>
                     </a>
