@@ -110,15 +110,16 @@ i:hover{
   
 
 }
-.sub-header{
-    max-width: 600px;
+.sub-header {
+   
     text-align: justify;
     padding-left: .5rem;
     padding-right: .5rem;
     padding-bottom: 1rem;
 }
 
-.row p{
+.row p {
+   
     padding-left: .5rem;
     padding-right: .5rem
 }
@@ -540,8 +541,90 @@ a{
 
 
 
+@media (min-width: 319px) {
+   
+  
+ 
+}
 
-@media (min-width:) {
+@media (min-width: 380px){
+    .recommendation-wrap {
+        height: 50vh;
+    }
+}
+
+@media (min-width: 500px){
+    .recommendation-wrap {
+        height: 60vh;
+    }
+}
+
+
+@media (min-width: 767px) {
+   .testimonial-content .visually-hidden{
+        display: flex !important;
+        height: 100% !important;
+        position: relative !important;
+        width: 100% !important;
+    
+    }
+    p{
+        max-width: 600px;
+    }
+    .header-bg{
+        height: 50vh;
+    }
+    .hero-section{
+        margin-top: 10rem;
+       
+    }
+    .wrap .row{
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+    }
+    .contact-bg{
+        padding-right: 5rem;
+        padding-left: 5rem;
+    }
+
+    .recommendation-wrap {
+        height: 45vh;
+    }
+}
+
+
+
+@media (min-width: 991px){
+    .header-bg{
+        height: 100vh;
+    }
+    .contact-bg{
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+    .navbar{
+        font-size: 1.2rem;
+    }
+    .recommendation-wrap {
+        height: 85vh;
+    }
+    .testimonial {
+        margin-right: 5rem;
+        margin-left: 5rem;
+        
+    }
+    .testimonial-content
+{
+        height: 350px;
+    }
+
+@media (min-width: 1199px){
+    .navbar{
+        font-size: 1.5rem;
+    }
+    .recommendation-wrap{
+        height: 65vh;
+    }
 
 }
     /*
