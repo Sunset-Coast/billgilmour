@@ -197,6 +197,7 @@ a.nav-link:hover{
  font-weight: 700;
     display: flex;
     flex-direction: column;
+    margin-top: 9rem;
    
 }
 .hero{
@@ -366,6 +367,7 @@ margin: auto;
  
     background-color: white;
     height: 65vh;
+    margin-top: 2rem;
 
   
 }
@@ -429,8 +431,18 @@ flex-shrink: 0;
     display: flex;
 }
 
+.testimonial-title {
+    font-style: italic;
+}
+.testimonial-content{
+    font-size: 1.5rem;
+    font-weight: 500;
+
+}
+
 .arrow{
     font-size: 3rem;
+    color: var(--bg-dark-grey);
 }
 .leftarrow{
     width: auto;
@@ -438,7 +450,7 @@ flex-shrink: 0;
     display: flex;
     position: absolute;
     top: auto;
-    bottom: -40px;
+    bottom: -80px;
     left: auto;
     right: 60%;
 }
@@ -449,8 +461,8 @@ flex-shrink: 0;
     display: flex;
     position: absolute;
     top: auto;
-    bottom: -40px;
-    left: 60%;
+    bottom: -80px;
+    left: 55%;
     right: auto;
 }
 .contact-bg {
@@ -524,6 +536,13 @@ a{
 
 .copyright {
     font-size: .67rem;
+}
+
+
+
+
+@media (min-width:) {
+
 }
     /*
     
