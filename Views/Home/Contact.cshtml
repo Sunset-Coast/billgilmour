@@ -1,4 +1,5 @@
-﻿@{
+﻿@model ContactModel
+@{
     ViewData["Title"] = "Contact Us";
 }
 @section Header{
@@ -16,51 +17,175 @@
 
 
 <section class="contact-bg">
-    <div class ="container contact-wrap ">
-    <div class="row">
-        <div class="contact-form-container">
-            <h2>Ask A CFO</h2>
+    <div class="container contact-wrap ">
+       
+         @*   <div class="contact-form-container">
+                <h2>Ask A CFO</h2>
                 <p>
-                   Please complete this form and one of our partners will contact you.
+                    Please complete this form and one of our partners will contact you.
                 </p>
-        </div>
-        <div class="">
-            <form>
-           <div class="row">
-               <div class="col-12 col-md-6">
+            </div>*@
+            @using (Html.BeginForm())
+            {
+                <div class="row">
+                @Html.AntiForgeryToken()
+                <h2 class="mt-4">Have a question for a CFO?</h2>
+                <p>
+                    Please complete this form and one of our partners will contact you.
+                </p>
+                <hr />
+                <div class="row">
+                    <div class="col-md-6">
                 <div class="form-group">
-                    <label for="name">First Name:</label>
-                    <input type="text" class="form-control" id="firstName" name="firstName" required>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6">
-                        <div class="form-group">
-                            <label for="name">Last Name:</label>
-                            <input type="text" class="form-control" id="lastName" name="lastName" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12 col-md-6">
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6">
-                     <div class="form-group">
-                            <label for="tel">Phone Number:</label>
-                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="(___)-___-____">
-                                </div>
-                            </div>
-                        </div>
-                <div class="form-group">
-                            <label for="message">Have a particular challenge you're facing or just a general question?</label>
-                    <textarea class="form-control" id="message" name="message" required placeholder="Have a question or a comment?"></textarea>
+                    @Html.LabelFor(m => m.FirstName, new { @class = " control-label" })
+                  
+                        @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.FirstName)
+                    </div>
                 </div>
-                <button type="submit" class="btn mt-3 btn-lg">Submit</button>
-            </form>
+                    <div class="col-md-6">
+                <div class="form-group">
+                    @Html.LabelFor(m => m.LastName, new { @class = " control-label" })
+                        @Html.TextBoxFor(m => m.LastName, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.LastName)
+                    </div>
+                </div>
+                </div> <div class="row">
+                    <div class="col-md-6">
+                <div class="form-group">
+                    @Html.LabelFor(m => m.SenderEmail, new { @class = " control-label" })
+                        @Html.TextBoxFor(m => m.SenderEmail, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.SenderEmail)
+                    </div>
+                </div>
+                    <div class="col-md-6">
+                <div class="form-group">
+                    @Html.LabelFor(m => m.PhoneNumber, new { @class = " control-label" })
+                    @Html.TextBoxFor(m => m.PhoneNumber, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.PhoneNumber, "", new { @class = "text-danger" })</div>
+                </div></div>
+                    <div class="col-md-12">
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Message, new { @class = "control-label" })
+                        @Html.TextAreaFor(m => m.Message, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.Message)
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" class="btn btn-default" value="Send" />
+                    </div>
+                </div></div>
+            }
+           @* <div class="">
+                <form>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label for="name">First Name:</label>
+                                <input type="text" class="form-control" id="firstName" name="firstName" required>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label for="name">Last Name:</label>
+                                <input type="text" class="form-control" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label for="tel">Phone Number:</label>
+                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="(___)-___-____">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Have a particular challenge you're facing or just a general question?</label>
+                        <textarea class="form-control" id="message" name="message" required placeholder="Have a question or a comment?"></textarea>
+                    </div>
+                    <button type="submit" class="btn mt-3 btn-lg">Submit</button>
+                </form>
+            </div>*@
         </div>
+
+</section>
+
+
+@*
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <h4>Send your comments.</h4>
+    <hr />
+    <div class="form-group">
+        @Html.LabelFor(m => m.FirstName, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.FirstName)
         </div>
     </div>
-</section>
+    <div class="form-group">
+        @Html.LabelFor(m => m.LastName, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.LastName, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.LastName)
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.SenderEmail, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.SenderEmail, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.SenderEmail)
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="PhoneNumber">Phone Number:</label>
+        @Html.TextBoxFor(m => m.PhoneNumber, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.PhoneNumber, "", new { @class = "text-danger" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Message, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextAreaFor(m => m.Message, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Message)
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" class="btn btn-default" value="Send" />
+        </div>
+    </div>
+}*@
+
+
+
+@section scripts{
+    <script>
+        let message = `@(ViewBag.SwalMessage)`;
+
+        if (!message.includes("Error") && message != ``) {
+            Swal.fire({
+                backdrop: false,
+                icon: 'success',
+                title: message,
+                showConfirmation: true
+            })
+        } else if (message.includes("Error")) {
+            Swal.fire({
+                backdrop: false,
+                icon: 'error',
+                title: 'Oops....',
+                text: message
+            })
+
+        }
+    </script>
+}

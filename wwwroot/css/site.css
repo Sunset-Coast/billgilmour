@@ -224,9 +224,9 @@ a.nav-link:hover{
 }
 
 .index-content h3{
-    text-align: center;
+    text-align: start;
     padding-top: 1rem;
-    font-size: 3rem;
+    font-size: 1.8rem;
     padding-bottom: 1rem;
 
     color: var(--bg-dark-blue);
@@ -250,13 +250,15 @@ margin: auto;
 }
 
 .index-serve-content h4{
-    font-size: 2rem;
+    font-size: 1.3rem;
     text-align: center;
     padding-top: 2rem;
 }
 
 .index-serve-content p{
-    padding: 2rem;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    text-align: justify;
     max-width: 600px;
 }
 
@@ -539,12 +541,40 @@ a{
     font-size: .67rem;
 }
 
+.wrapper{
+    padding-left: .2rem;
+    padding-right: .2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+    .wrapper > h2 {
+        text-align: start;
+        padding-top: 1rem;
+        font-size: 1.8rem;
+        padding-bottom: 1rem;
+        color: var(--bg-dark-blue);
+        letter-spacing: .2rem;
+    }
 
+.icon-two{
+    font-size: 2.5rem;
+    color: var(--bg-highlight-color);
+}
+.headline3{
+    font-size: 1.3rem;
+  
+}
+
+.d-block > p {
+    text-align: justify;
+    padding: .4rem;
+}
 
 @media (min-width: 319px) {
     .recommendation-wrap {
         height: 80vh;
     }
+   
   
  
 }
@@ -621,11 +651,11 @@ a{
 
     @media (min-width: 991px) {
         h1 {
-            font-size: 6rem;
+            font-size: 4rem;
         }
 
         .hero-section {
-            margin-top: 5rem;
+            margin-top: 4rem;
         }
 
         .header-bg {
@@ -656,11 +686,11 @@ a{
 
         @media (min-width: 1199px) {
             h1 {
-                font-size: 7rem;
+                font-size: 5rem;
             }
 
             .hero-section {
-                margin-top: 6.5rem;
+                margin-top: 4.5rem;
             }
 
             .navbar {
