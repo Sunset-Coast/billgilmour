@@ -212,6 +212,9 @@ a.nav-link:hover{
 
 }
 
+.hero > .hero-other{
+    margin-top: 5rem;
+}
 
 
 .cta-button{
@@ -487,7 +490,7 @@ flex-shrink: 0;
 }
 .contact-wrap {
 
-    border-radius: 20px;
+   margin-bottom: 2rem;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
@@ -610,7 +613,9 @@ a{
         .hero-section {
             margin-top: 3rem;
         }
-
+        .hero >.hero-other{
+            margin-top: 8rem;
+        }
         p {
             max-width: 600px;
         }
@@ -647,6 +652,9 @@ a{
         }
     }
 
+    @media (min-width: 800px){
+
+    }
 
 
     @media (min-width: 991px) {
