@@ -598,6 +598,9 @@ a{
 
 
     @media (min-width: 767px) {
+        html, body {
+            font-size: 16px;
+        }
         .testimonial-content .visually-hidden {
             display: flex !important;
             height: 100% !important;
@@ -658,6 +661,9 @@ a{
 
 
     @media (min-width: 991px) {
+        html, body {
+            font-size: 16px;
+        }
         h1 {
             font-size: 4rem;
         }
@@ -678,6 +684,9 @@ a{
         .navbar {
             font-size: 1.2rem;
         }
+        index-serve-content p{
+            max-width: 850px;
+        }
 
         .recommendation-wrap {
             height: 95vh;
@@ -693,22 +702,41 @@ a{
         }
 
         @media (min-width: 1199px) {
-            h1 {
+           
+            html, body{
+                font-size: 20px;
+            }
+            .hero-section{
+                margin-top: 4rem;
+            }
+            .hero > .hero-other {
+                margin-top: 9rem;
+            }
+         h1 {
                 font-size: 5rem;
             }
 
-            .hero-section {
-                margin-top: 4.5rem;
-            }
-
             .navbar {
-                font-size: 1.5rem;
+                font-size: 1.3rem;
             }
 
             .recommendation-wrap {
                 height: 100vh;
             }
         }
+
+
+  /*      @media (min-width: 1200px){
+            html, body{
+                font-size: 20px;
+            }
+            .hero-section{
+                margin-top: 3rem;
+            }
+            .hero > .hero-other {
+                margin-top: 7rem;
+            }
+        }*/
         /*
     
 
